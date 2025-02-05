@@ -152,7 +152,7 @@ nav ul li a:hover::after {
     display: block;
 }
 
-/*---------services----------*/
+/*---------questions----------*/
 #services {
     padding: 30px 0;
 }
@@ -167,7 +167,7 @@ nav ul li a:hover::after {
 .services-list div {
     background: #262626;
     padding: 40px;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
@@ -179,7 +179,7 @@ nav ul li a:hover::after {
 }
 
 .services-list div h2 {
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -197,7 +197,7 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
-/*------portfolio----------*/
+/*------projects----------*/
 #portfolio {
     padding: 50px 0;
 }
@@ -267,21 +267,6 @@ nav ul li a:hover::after {
     height: 100%;
 }
 
-.btn {
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    transition: background 0.5s
-}
-
-.btn:hover {
-    background: #ff004f;
-}
 
 /*-------contact------*/
 .contact-left {
