@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Michael John Quisaot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c81cee159e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="log.jpg" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#questions">Questions</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>BS Computer Science</p>
+            <h1>Michael John Quisaot</h1>
+        </div>
+    </div>
+</div>
+<!------ABOUT------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="logo.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>DESCRIPTION</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>OTEN</span><br>CHUPAON</li>
+                        <li><span>OTEN</span><br>CHUPAON</li>
+                        <li><span>OTEN</span><br>CHUPAON</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>BILAT</span><br>TILAAN</li>
+                        <li><span>BILAT</span><br>TILAAN</li>
+                        <li><span>BILAT</span><br>TILAAN</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>TOTOY</span><br>SOPSOPON</li>
+                        <li><span>TOTOY</span><br>SOPSOPON</li>
+                        <li><span>TOTOY</span><br>SOPSOPON</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----questions-->
+<div class="questions">
+    <div class="container">
+        <h1 class="sub-title">Questions</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Design</h2>
+                <p>DESCRIPTION</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Design</h2>
+                <p>DESCRIPTION</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-apple"></i>
+                <h2>Design</h2>
+                <p>DESCRIPTION</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------project-->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="flower.jpg">
+                <div class="layer">
+                    <h3>TITLE</h3>
+                    <p>DESCRIPTION</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="flower.jpg">
+                <div class="layer">
+                    <h3>TITLE</h3>
+                    <p>DESCRIPTION</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="flower.jpg">
+                <div class="layer">
+                    <h3>TITLE</h3>
+                    <p>DESCRIPTION</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!--------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> mjquisaot@mcm.edu.ph</p>
+                <p><i class="fa-solid fa-phone"></i> 09615877778</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jhnqsaot/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/mjquisaot/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
