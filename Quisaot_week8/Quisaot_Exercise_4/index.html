@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="callAPI()">Search</button>
+        </div>
+        <div id="weatherDetails">
+            <h2>Weather Details</h2>
+            <p><strong>City:</strong> <span id="weather_city">--</span></p>
+            <p><strong>Temperature:</strong> <span id="weather_temperature">--</span></p>
+            <p><strong>Condition:</strong> <span id="weather_condition">--</span></p>
+        </div>
+        <p id="errorMessage"></p>
+    </div>
+    <script src="json.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Week 5 Activity 4</title>
     <style>
         * {
             margin: 0;
@@ -112,22 +112,38 @@
     </style>
 </head>
 <body>
-  <div id="particles-js"></div>
+    <div class="container">
+        <header>
+            <h1>Quisaot Week 8 Activity</h1>
+            <button id="toggleMode">🌙 Dark Mode</button>
+        </header>
 
-  <div class="container">
-      <header>
-          <h1>Hi! I'm <span class="highlight">Michael John Quisaot</span></h1>
-      </header>
+        <section>
+            <h2>CSS Activities</h2>
+            <ol>
+                <li><a href="/Quisaot_week8/Quisaot_Exercise_1/">Exercise 1</a></li>
+                <li><a href="/Quisaot_week8/Quisaot_Exercise_2/">Exercise 2</a></li>
+                <li><a href="/Quisaot_week8/Quisaot_Exercise_3/">Exercise 3</a></li>
+                <li><a href="/Quisaot_week8/Quisaot_Exercise_4/">Exercise 4</a></li>
+                <li><a href="/Quisaot_week8/Quisaot_Exercise_5/">Exercise 5</a></li>
+                <li><a href="/Quisaot_week8/Quisaot_Exercise_6/">API Activity</a></li>
+            </ol>
+        </section>
+    </div>
 
-      <section>
-          <h2>HTML Tasks</h2>
-          <ol>
-              <li><a href="portfolio.html">Digital Course Portfolio</a></li>
-              <li><a href="/Quisaot_week8/index.html">Week 8 Activity</a></li>
-          </ol>
-      </section>
-  </div>
+    <script>
+        const toggleButton = document.getElementById("toggleMode");
+        const body = document.body;
 
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
 
+            if (body.classList.contains("dark-mode")) {
+                toggleButton.textContent = "☀️ Light Mode";
+            } else {
+                toggleButton.textContent = "🌙 Dark Mode";
+            }
+        });
+    </script>
 </body>
 </html>
